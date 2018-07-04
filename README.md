@@ -1,8 +1,4 @@
-# hello_flutter
+学习 Flutter 时写的Demo项目.
 
-A new Flutter project.
-
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+## TODO
+<img align="left" src="assets/preview_todo.png" alt="TODO PREVIEW">
