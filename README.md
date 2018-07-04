@@ -10,7 +10,7 @@ cd hello_flutter
 flutter run
 ```
 
-wiki :
+## wiki
 + [Dart 基本语法](https://github.com/liuzhiyuan1993/hello_flutter/wiki/Dart-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95)
 + [使用 Simulator](https://github.com/liuzhiyuan1993/hello_flutter/wiki/%E4%BD%BF%E7%94%A8-Simulator)
 + [IDE 配置](https://github.com/liuzhiyuan1993/hello_flutter/wiki/IDE-%E9%85%8D%E7%BD%AE)
