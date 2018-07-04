@@ -1,4 +1,4 @@
-学习 Flutter 时写的Demo项目.
+学习 Flutter 时写的 Demo 项目.
 
 ## 如何使用
 ```bash
