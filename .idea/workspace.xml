@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f23f9e3-61e2-4cb4-9722-472a9168b08d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/eiheihei.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/preview_dialog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/preview_drawer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/home/home.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/home/side_drawer.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/button_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/dialog_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/icon_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/list_demo.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/ui.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/todo/app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/todo/todo.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -36,7 +22,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="375">
-                <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+                <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               </first_editor>
               <second_editor />
             </state>
@@ -227,12 +213,12 @@
       <workItem from="1530843445892" duration="1000" />
       <workItem from="1530848063700" duration="4323000" />
       <workItem from="1530862609831" duration="6995000" />
-      <workItem from="1530876462294" duration="106000" />
+      <workItem from="1530876462294" duration="199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31465000" />
+    <option name="totallyTimeSpent" value="31558000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="878" extended-state="6" />
@@ -597,7 +583,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="375">
-            <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+            <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           </first_editor>
           <second_editor />
         </state>

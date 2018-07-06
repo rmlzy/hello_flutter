@@ -18,9 +18,9 @@ flutter run
 
 ## 预览
 ### TODO
-<img align="left" width="400" src="assets/preview_todo.png" alt="TODO PREVIEW">
+<img width="400" src="assets/preview_todo.png" alt="TODO PREVIEW">
 
 ### Demos
-<img align="left" width="400" src="assets/preview_dialog.png" alt="TODO PREVIEW">
+<img width="400" src="assets/preview_dialog.png" alt="TODO PREVIEW">
 
-<img align="left" width="400" src="assets/preview_drawer.png" alt="TODO PREVIEW">
+<img width="400" src="assets/preview_drawer.png" alt="TODO PREVIEW">
