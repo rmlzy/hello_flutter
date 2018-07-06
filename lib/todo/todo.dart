@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'list.dart';
 
-class TodoApp extends StatefulWidget {
+class TodoPage extends StatefulWidget {
   @override
-  TodoAppState createState() => new TodoAppState();
+  _TodoPageState createState() => new _TodoPageState();
 }
 
-class TodoAppState extends State<TodoApp> {
+class _TodoPageState extends State<TodoPage> {
   showDemoDialog() {
     return showDialog(
       context: context,
