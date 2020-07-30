@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:hello_flutter/todo/todo.dart';
 import 'package:hello_flutter/ui/ui.dart';
+import 'package:hello_flutter/login/login.dart';
 
 class SideDrawer extends StatefulWidget {
   @override
@@ -22,6 +24,11 @@ class _SideDrawerState extends State<SideDrawer> {
         context, new MaterialPageRoute(builder: (context) => new TodoPage()));
   }
 
+  void toLoginPage() {
+    Navigator.push(
+        context, new MaterialPageRoute(builder: (context) => new LoginPage()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return new Drawer(
@@ -40,7 +47,9 @@ class _SideDrawerState extends State<SideDrawer> {
                   onPressed: null)
             ],
             currentAccountPicture: new CircleAvatar(
-              backgroundColor: Theme.of(context).accentColor,
+              backgroundColor: Theme
+                  .of(context)
+                  .accentColor,
               backgroundImage: new AssetImage("assets/eiheihei.jpeg"),
             ),
           ),
@@ -70,6 +79,10 @@ class _SideDrawerState extends State<SideDrawer> {
                 new Divider(
                   height: 1.0,
                   color: Colors.grey,
+                ),
+                new ListTile(
+                  title: new Text('登录'),
+                  onTap: toLoginPage,
                 ),
               ],
             ),
