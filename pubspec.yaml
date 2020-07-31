@@ -3,6 +3,8 @@ description: A new Flutter project.
 
 dependencies:
   http: "0.12.2"
+  flutter_svg: "0.17.4"
+  requests: "^3.3.0"
   flutter:
     sdk: flutter
 

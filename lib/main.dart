@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+// demos
+import 'package:hello_flutter/demos/IndexDemo.dart';
+import 'package:hello_flutter/demos/LifecycleDemo.dart';
+import 'package:hello_flutter/demos/GridDemo.dart';
 
-import 'login/login.dart';
-import 'home/home.dart';
-import 'todo/todo.dart';
+import 'pages/HomePage.dart';
+import 'pages/LoginPage.dart';
 
 void main() => runApp(new MyApp());
 
@@ -11,11 +14,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: 'Hello Flutter',
-      theme: new ThemeData(primarySwatch: Colors.blueGrey),
-      home: new HomePage(),
+      theme: new ThemeData(primarySwatch: Colors.teal),
+      home: new LoginPage(),
       routes: <String, WidgetBuilder>{
-        '/todo': (BuildContext ctx) => new TodoPage(),
-        '/login': (BuildContext ctx) => new LoginPage()
+        '/demo/index': (BuildContext ctx) => new IndexDemo(),
+        '/demo/lifecycle': (BuildContext ctx) => new LifecycleDemo(),
+        '/demo/grid': (BuildContext ctx) => new GridDemo(),
+        '/login': (BuildContext ctx) => new LoginPage(),
       },
     );
   }

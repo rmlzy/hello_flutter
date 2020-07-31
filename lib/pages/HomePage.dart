@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'side_drawer.dart';
+import 'package:hello_flutter/widgets/SideDrawer.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -15,12 +15,15 @@ class _HomePageState extends State<HomePage> {
       appBar: new AppBar(
         title: new Text('首页'),
       ),
-      body: ListView.builder(itemCount: papers.length,
+      body: ListView.builder(
+          itemCount: papers.length,
           itemBuilder: (context, index) {
             return Container(
               height: 50,
               color: Color.fromRGBO(0, 0, 0, 0.1),
-              child: Center(child: Text('Hello ${papers[index]}'),),
+              child: Center(
+                child: Text('Hello ${papers[index]}'),
+              ),
             );
           }),
       drawer: new Padding(
