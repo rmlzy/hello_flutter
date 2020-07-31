@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hello_flutter/widgets/SideDrawer.dart';
+import 'package:hello_flutter/widgets/Request.dart';
+import 'package:hello_flutter/widgets/Toast.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -7,7 +9,41 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<String> papers = <String>['A', "B", 'C'];
+  List papers = [];
+
+  _fetchPapers() async {
+    try {
+      final r = await Request.get("/api/paper");
+      final res = r.json();
+      if (!res['message']) {
+        Toast.show(context, "提示", res['message']);
+        return;
+      }
+      setState(() {
+        papers = res['data']['list'];
+        print(papers);
+      });
+    } catch (e) {
+      print(e);
+      Toast.show(context, "提示", "抱歉, 服务器开小差了");
+    } finally {}
+  }
+
+  _renderPaper(context, index) {
+    return Card(
+      child: ListTile(
+        title: Text("${papers[index]['name']}"),
+        trailing: Icon(Icons.arrow_right),
+        onTap: () {},
+      ),
+    );
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _fetchPapers();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -18,13 +54,7 @@ class _HomePageState extends State<HomePage> {
       body: ListView.builder(
           itemCount: papers.length,
           itemBuilder: (context, index) {
-            return Container(
-              height: 50,
-              color: Color.fromRGBO(0, 0, 0, 0.1),
-              child: Center(
-                child: Text('Hello ${papers[index]}'),
-              ),
-            );
+            return _renderPaper(context, index);
           }),
       drawer: new Padding(
         padding: EdgeInsets.only(right: 80.0),

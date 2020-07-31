@@ -59,6 +59,7 @@ class _LoginPageState extends State<LoginPage> {
       final res = r.json();
       if (!res['success']) {
         Toast.show(context, "提示", res['message']);
+        await _fetchCaptcha();
         return;
       }
       await Request.setCookie("token", res['data']['token']);
